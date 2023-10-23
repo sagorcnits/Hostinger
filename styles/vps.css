@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+:root {
+  --header-font: "Josefin Sans";
+  --primary-font: "Ubuntu";
+  --black: #000;
+  --white: #fff;
+  --primary-color: #2563ea;
+  --navy-blue: #111828;
+}
+
+/* vps hero */
+
+#vps-hero {
+  width: 100%;
+  height: 50vh;
+  background: url(../images/vps-hero-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  margin-top: 83px;
+}
+
+.vps-hero-content h1 {
+  color: var(--white);
+  font-size: 2.8em;
+  font-weight: 700;
+  font-family: var(--header-font);
+}
+
+.vps-hero-content p {
+  color: var(--white);
+  font-size: 1em;
+  font-family: var(--primary-font);
+}
+
+@media screen and (max-width: 768px) {
+  .vps-hero-content h1 {
+    font-size: 2.2em;
+  }
+}
+
+/* vps hero */
+
+/* vps packages */
+
+#vps-package {
+  padding: 80px 0;
+}
+
+.vps-package-header h4 {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  font-weight: 400;
+  font-family: var(--primary-font);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.vps-package-header h1 {
+  font-family: var(--header-font);
+  font-size: 2.8em;
+  color: var(--black);
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.vps-package-items {
+  background: #ffffff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  padding: 35px 25px;
+  border-radius: 30px 0 30px 30px;
+  margin: 25px;
+}
+
+.vps-package-advanced {
+  background-color: #eff6ff;
+}
+
+.vps-package-items h3 {
+  font-family: var(--header-font);
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+.vps-package-items h4 {
+  font-size: 1.3em;
+  font-family: var(--primary-font);
+  font-weight: 400;
+}
+
+.vps-package-items h4 span {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.vps-package-items ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.vps-package-items ul li {
+  margin: 10px 0;
+  font-family: var(--primary-font);
+}
+
+.vps-package-items ul li span {
+  color: var(--primary-color);
+  margin-right: 5px;
+}
+
+.vps-package-btn {
+  margin-top: 25px;
+}
+
+.vps-package-btn a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+  font-family: var(--primary-font);
+  padding: 8px 30px;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+.vps-package-btn a:hover {
+  color: var(--white);
+}
+
+@media screen and (max-width: 990px) {
+  .vps-package-header h1 {
+    font-size: 2em;
+  }
+
+  .vps-package-header h4 {
+    font-size: 1.1em;
+  }
+}
+
+/* vps packages */
+
+/* vps feature */
+
+#vps-feature {
+  padding: 60px 0;
+}
+
+.vps-feature-header h4 {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  font-weight: 400;
+  font-family: var(--primary-font);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.vps-feature-header h1 {
+  font-family: var(--header-font);
+  font-size: 2.8em;
+  color: var(--black);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.vps-feature-header p {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: 40px;
+}
+
+.vps-feature-content {
+  background: #eff6ff;
+  padding: 10px 30px;
+  border-radius: 15px;
+}
+
+.vps-feature-items {
+  background-color: var(--white);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 20px;
+  margin: 15px 0;
+}
+
+.vps-feature-items p {
+  text-align: center;
+}
+
+.vps-feature-items i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: auto;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 8px;
+  font-size: 1.5em;
+}
+
+.vps-feature-items h4 {
+  text-align: center;
+  font-family: var(--header-font);
+  color: var(--black);
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+@media screen and (max-width: 990px) {
+  .vps-feature-header h1 {
+    font-size: 2em;
+  }
+
+  .vps-feature-header h4 {
+    font-size: 1.1em;
+  }
+}
+
+/* vps feature */
+
+/* vps speed */
+
+#vps-speed {
+  padding: 60px 0 80px;
+}
+
+.container-box-shadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.vps-speed-content h1 {
+  font-size: 2.6em;
+  color: var(--black);
+  font-weight: 700;
+  font-family: var(--header-font);
+  margin-bottom: 20px;
+}
+
+.vps-speed-content h1 span {
+  color: var(--primary-color);
+}
+
+.vps-speed-content p {
+  font-size: 1em;
+  color: var(--black);
+  font-family: var(--primary-font);
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.vps-speed-content img {
+  width: 90%;
+}
+
+@media screen and (max-width: 990px) {
+  .vps-speed-content h1 {
+    font-size: 2em;
+  }
+
+  .vps-speed-content img {
+    margin-top: 40px;
+  }
+}
+
+/* vps speed */
+
+/* vps included package */
+
+#vps-included-package {
+  padding: 60px 0;
+}
+
+.included-package-header h4 {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  font-weight: 400;
+  font-family: var(--primary-font);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.included-package-header h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+  font-family: var(--header-font);
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.included-package-items {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.included-package-items h4 {
+  font-size: 1.5em;
+  color: var(--black);
+  font-family: var(--header-font);
+}
+
+.included-package-items p {
+  margin-bottom: 0;
+}
+
+.included-package-items p i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 1.3em;
+  background-color: var(--primary-color);
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+  .included-package-items {
+    height: 250px;
+  }
+  .included-package-items h4 {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .included-package-items {
+    height: 280px;
+    padding: 15px;
+  }
+  .included-package-items h4 {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .included-package-items {
+    height: 220px;
+    padding: 15px 25px;
+  }
+
+  .included-package-header h1 {
+    font-size: 2em;
+  }
+
+  .included-package-header h4 {
+    font-size: 1.1em;
+  }
+}
+
+/* vps included package */
+
+/* faq */
+
+#faq {
+  padding: 40px 0 80px;
+}
+
+.faq-content img {
+  width: 85%;
+}
+
+.faq-content h1 {
+  font-family: var(--header-font);
+  font-size: 2.5em;
+  color: var(--black);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.accordion-button {
+  font-family: var(--primary-font);
+  font-size: 1.1em;
+  color: var(--black);
+  font-weight: 700;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+  outline: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0%);
+}
+
+.accordion-button:active {
+  border: none !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-item {
+  border: none !important;
+}
+
+@media screen and (max-width: 990px) {
+  .faq-content h1 {
+    font-size: 1.8em;
+    margin-top: 30px;
+  }
+}
+
+/* faq */

@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+:root {
+  --header-font: "Josefin Sans";
+  --primary-font: "Ubuntu";
+  --black: #000;
+  --white: #fff;
+  --primary-color: #2563ea;
+  --navy-blue: #111828;
+}
+
+/* dedicated hero */
+
+#dedicated-hero {
+  width: 100%;
+  height: 50vh;
+  background: url(../images/dedicated-server-hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  margin-top: 83px;
+}
+
+.dedicated-hero-content h1 {
+  color: var(--white);
+  font-size: 2.8em;
+  font-weight: 700;
+  font-family: var(--header-font);
+}
+
+.dedicated-hero-content p {
+  color: var(--white);
+  font-size: 1em;
+  font-family: var(--primary-font);
+}
+
+@media screen and (max-width: 768px) {
+  .dedicated-hero-content h1 {
+    font-size: 2.2em;
+  }
+}
+
+/* dedicated hero */
+
+/* dedicated packages */
+
+#dedicated-package {
+  padding: 80px 0;
+}
+
+.dedicated-package-header h4 {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  font-weight: 400;
+  font-family: var(--primary-font);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.dedicated-package-header h1 {
+  font-family: var(--header-font);
+  font-size: 2.8em;
+  color: var(--black);
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.dedicated-package-items {
+  background: #ffffff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  padding: 35px 25px;
+  border-radius: 8px;
+  margin: 25px;
+  position: relative;
+}
+
+.dedicated-package-items h3 {
+  font-family: var(--header-font);
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.dedicated-package-items h4 {
+  font-size: 1.3em;
+  font-family: var(--primary-font);
+  font-weight: 400;
+}
+
+.dedicated-package-items h4 span {
+  font-size: 2em;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.dedicated-package-items ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.dedicated-package-items ul li {
+  margin: 10px 0;
+  font-family: var(--primary-font);
+}
+
+.dedicated-package-items ul li span {
+  color: var(--primary-color);
+  margin-right: 5px;
+}
+
+.dedicated-package-btn {
+  margin-top: 25px;
+}
+
+.dedicated-package-btn a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+  font-family: var(--primary-font);
+  padding: 8px 30px;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+.dedicated-package-btn a:hover {
+  color: var(--white);
+}
+
+.ribbon-wrap {
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.ribbon-wrap::before,
+.ribbon-wrap::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #194fc5;
+  position: absolute;
+  z-index: -1;
+}
+
+.ribbon-wrap::before {
+  top: 0;
+  right: 35px;
+}
+
+.ribbon-wrap::after {
+  bottom: 35px;
+  left: 0;
+}
+
+.ribbon {
+  width: 250px;
+  font-size: 12px;
+  text-align: center;
+  background: var(--primary-color);
+  padding: 4px 0;
+  position: absolute;
+  color: #fff;
+  transform: rotate(-45deg);
+  right: -17%;
+  top: 24%;
+}
+
+@media screen and (max-width: 990px) {
+  .dedicated-package-header h1 {
+    font-size: 2em;
+  }
+
+  .dedicated-package-header h4 {
+    font-size: 1.1em;
+  }
+}
+
+/* dedicated packages */
+
+/* dedicated feature */
+
+#dedicated-feature {
+  padding: 60px 0;
+}
+
+.dedicated-feature-header h4 {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  font-weight: 400;
+  font-family: var(--primary-font);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.dedicated-feature-header h1 {
+  font-family: var(--header-font);
+  font-size: 2.8em;
+  color: var(--black);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.dedicated-feature-header p {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: 40px;
+}
+
+.dedicated-feature-content {
+  background: #eff6ff;
+  padding: 10px 30px;
+  border-radius: 15px;
+}
+
+.dedicated-feature-items {
+  background-color: var(--white);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 20px;
+  margin: 15px 0;
+}
+
+.dedicated-feature-items p {
+  text-align: center;
+}
+
+.dedicated-feature-items i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: auto;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 8px;
+  font-size: 1.5em;
+}
+
+.dedicated-feature-items h4 {
+  text-align: center;
+  font-family: var(--header-font);
+  color: var(--black);
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+@media screen and (max-width: 990px) {
+  .dedicated-feature-header h1 {
+    font-size: 2em;
+  }
+
+  .dedicated-feature-header h4 {
+    font-size: 1.1em;
+  }
+}
+
+/* dedicated feature */
+
+/* dedicated speed */
+
+#dedicated-speed {
+  padding: 60px 0 80px;
+}
+
+.dedicated-speed-content h1 {
+  font-size: 2.6em;
+  color: var(--black);
+  font-weight: 700;
+  font-family: var(--header-font);
+  margin-bottom: 20px;
+}
+
+.dedicated-speed-content h1 span {
+  color: var(--primary-color);
+}
+
+.dedicated-speed-content p {
+  font-size: 1em;
+  color: var(--black);
+  font-family: var(--primary-font);
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.dedicated-speed-content img {
+  width: 85%;
+}
+
+.container-box-shadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 990px) {
+  .dedicated-speed-content h1 {
+    font-size: 2em;
+  }
+
+  .dedicated-speed-content img {
+    margin-top: 40px;
+  }
+}
+
+/* dedicated speed */
+
+/* dedicated included package */
+
+#dedicated-included-package {
+  padding: 60px 0;
+}
+
+.included-package-header h4 {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  font-weight: 400;
+  font-family: var(--primary-font);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.included-package-header h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+  font-family: var(--header-font);
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.included-package-items {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.included-package-items h4 {
+  font-size: 1.5em;
+  color: var(--black);
+  font-family: var(--header-font);
+}
+
+.included-package-items p {
+  margin-bottom: 0;
+}
+
+.included-package-items p i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 1.3em;
+  background-color: var(--primary-color);
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+  .included-package-items {
+    height: 250px;
+  }
+  .included-package-items h4 {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .included-package-items {
+    height: 280px;
+    padding: 15px;
+  }
+  .included-package-items h4 {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .included-package-items {
+    height: 220px;
+    padding: 15px 25px;
+  }
+
+  .included-package-header h1 {
+    font-size: 2em;
+  }
+
+  .included-package-header h4 {
+    font-size: 1.1em;
+  }
+}
+
+/* dedicated included package */
+
+/* faq */
+
+#faq {
+  padding: 40px 0 80px;
+}
+
+.faq-content img {
+  width: 85%;
+}
+
+.faq-content h1 {
+  font-family: var(--header-font);
+  font-size: 2.5em;
+  color: var(--black);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.accordion-button {
+  font-family: var(--primary-font);
+  font-size: 1.1em;
+  color: var(--black);
+  font-weight: 700;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+  outline: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0%);
+}
+
+.accordion-button:active {
+  border: none !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-item {
+  border: none !important;
+}
+
+@media screen and (max-width: 990px) {
+  .faq-content h1 {
+    font-size: 1.8em;
+    margin-top: 30px;
+  }
+}
+
+/* faq */
